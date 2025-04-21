@@ -1,0 +1,76 @@
+.seller-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #81C784; /* Soft light green background */
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .header-left h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .header-center .nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+  
+  .header-center .nav-links div {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease; /* Smooth transition */
+    font-weight: 500;
+  }
+  
+  .header-center .nav-links .selected {
+    background-color: #388E3C; /* Rich green for active link */
+    color: white;
+  }
+  
+  .header-center .nav-links div:hover {
+    background-color: #66BB6A; /* Soft green for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .header-right .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right .profile-section .icon-item {
+    margin-right: 12px;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .header-right .uname {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 25px;
+    color: #ffffff; /* White text for username */
+  }
+  
+  .header-right div {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background-color: #4CAF50; /* Green color for buttons */
+    color: white;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .header-right div:hover {
+    background-color: #388E3C; /* Dark green for hover effect */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  

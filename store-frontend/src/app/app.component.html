@@ -1,0 +1,11 @@
+<div class="navbar">
+  <app-appheader *ngIf="!isLoggedIn && !isAdminLoggedIn"></app-appheader>
+  <app-buyerheader *ngIf="isLoggedIn && !isAdminLoggedIn"></app-buyerheader>
+  <app-sellerheader *ngIf="!isLoggedIn && isAdminLoggedIn"></app-sellerheader>
+</div>
+
+<div class="main">
+  <div class="content-section">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="main">
+    <h1 class="header">{{ isEdit ? 'Update Product' : 'Add Product' }}</h1>
+  
+    <div class="form">
+      <input
+        type="text"
+        class="box"
+        placeholder="Product Name"
+        [(ngModel)]="name"
+      />
+      <input
+        type="text"
+        class="box"
+        placeholder="Product Price"
+        [(ngModel)]="price"
+      />
+      <input
+        type="number"
+        class="box"
+        placeholder="Quantity"
+        [(ngModel)]="quantity"
+      />
+  
+      <select [(ngModel)]="categoryId" class="box">
+        <option disabled selected>Select Category</option>
+        <option *ngFor="let category of catgoryList" [value]="category.id">
+          {{ category.name }}
+        </option>
+      </select>
+  
+      <div class="text-center">
+        <button (click)="addUpdateProudcut()" class="submit-button">
+          {{ isEdit ? 'Update Product' : 'Add Product' }}
+        </button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <!-- Profile Section -->
+    <div class="profile" (click)="gotourl('profile')">
+      <div class="icon-item">
+        <mat-icon>account_box</mat-icon>
+      </div>
+      <div class="uname">{{user.userName}}</div>
+    </div>
+  
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <div (click)="gotourl('buyerhome')" [class.selected]="url === '/buyerhome'" class="nav-item">Home</div>
+      <div (click)="gotourl('listproduct')" [class.selected]="url === '/listproduct'" class="nav-item">List Product</div>
+      <div (click)="gotourl('logout')" [class.selected]="url === '/logout'" class="nav-item">Logout</div>
+    </div>
+  </nav>

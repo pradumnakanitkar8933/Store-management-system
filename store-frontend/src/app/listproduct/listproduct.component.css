@@ -1,0 +1,80 @@
+.main {
+    background-color: #f4f6f8; /* Light background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.left-panel {
+    overflow-x: auto;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.product-table th,
+.product-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.product-table th {
+    background-color: #388E3C; /* Green background for header */
+    color: white;
+}
+
+.product-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.product-table tbody tr:hover {
+    background-color: #f1f1f1; /* Light gray hover effect */
+}
+
+.product-table tbody td button {
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.product-table tbody td button:hover {
+    background-color: #388E3C; /* Green button on hover */
+    color: white;
+}
+
+.product-table tbody td button:focus {
+    outline: none;
+}
+
+.btn-warning {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    border-color: #d9534f;
+}
+
+/* Styling for Remarks */
+.product-table td {
+    font-size: 14px;
+    color: #555;
+}

@@ -1,0 +1,45 @@
+<div class="main">
+  <h1>LIST OF PRODUCTS</h1>
+  <div class="left-panel">
+      <table class="product-table">
+          <thead>
+              <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Category</th>
+                  <th>Remarks</th>
+                  <th colspan="2" *ngIf="isAdmin">ACTIONS</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let product of allproduct">
+                  <td>{{ product?.id }}</td>
+                  <td>{{ product?.name }}</td>
+                  <td>{{ product?.price }}</td>
+                  <td>{{ product?.quantity }}</td>
+                  <td>{{ product?.category?.name }}</td>
+                  <td *ngIf="isAdmin">
+                      {{ product?.quantity === 0 ? 'Quantity is zero' : '' }}
+                  </td>
+                  <td *ngIf="isAdmin">
+                      <button class="btn btn-warning" (click)="onEdit(product)">
+                          <i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit
+                      </button>
+                  </td>
+                  <td *ngIf="isAdmin">
+                      <button class="btn btn-danger" (click)="onDelete(product)">
+                          <i class="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete
+                      </button>
+                  </td>
+                  <td *ngIf="!isAdmin">
+                      <button class="btn btn-danger" (click)="placeOrder(product)">
+                          &nbsp;Place Order
+                      </button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

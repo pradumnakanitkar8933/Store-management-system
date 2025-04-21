@@ -1,0 +1,20 @@
+<div class="main">
+    <h1>Place Order</h1>
+    <div class="form">
+        <input type="text" class="box" placeholder="Product Name" [(ngModel)]="name" disabled>
+        <input type="text" class="box" placeholder="Product Price" [(ngModel)]="price" disabled>
+        <input type="number" class="box" placeholder="Quantity" [(ngModel)]="quantity" disabled>
+        
+        <label for="buyquantity">Buy Quantity:</label>
+        <input type="number" class="box" placeholder="Quantity" [(ngModel)]="buyquantity">
+        
+        <br />
+        <select [(ngModel)]="categoryId" class="box" disabled>
+            <option *ngFor="let category of catgoryList" [value]="category.id">{{category.name}}</option>
+        </select>
+
+        <div class="text-center">
+            <button (click)="onBuy()" class="btn btn-primary">Place Order</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: linear-gradient(to right, #e0f7fa, #e8f5e9);
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .nav-item {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #00796b;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-item:hover {
+    background-color: #b2dfdb;
+    color: #004d40;
+  }
+  
+  .selected {
+    background-color: #80cbc4;
+    color: white;
+    font-weight: 600;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .main-nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .nav-item {
+      width: 100%;
+      text-align: center;
+    }
+  }

@@ -1,0 +1,19 @@
+<div class="main">
+    <h1 class="header">Add New Category</h1>
+  
+    <div class="form">
+      <input
+        type="text"
+        [(ngModel)]="categoryName"
+        placeholder="Category Name"
+        class="input-field"
+      />
+      <input
+        type="text"
+        [(ngModel)]="description"
+        placeholder="Category Description"
+        class="input-field"
+      />
+      <button (click)="addCategory()" class="submit-button">Add Category</button>
+    </div>
+  </div>

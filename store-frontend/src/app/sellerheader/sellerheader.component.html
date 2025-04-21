@@ -1,0 +1,26 @@
+<div class="seller-header">
+    <div class="header-left">
+      <!-- Logo or Store Name -->
+      <h1>Krishna Kirana Store</h1>
+    </div>
+  
+    <div class="header-center">
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <div (click)="gotourl('listproduct')" [class.selected]="url === '/listproduct'">List Products</div>
+        <div (click)="gotourl('addproduct')" [class.selected]="url === '/addproduct'">Add Product</div>
+        <div (click)="gotourl('add-category')" [class.selected]="url === '/add-category'">Add Category</div>
+      </div>
+    </div>
+  
+    <div class="header-right">
+      <!-- Profile and Logout -->
+      <div class="profile-section">
+        <div class="icon-item">
+          <mat-icon>account_circle</mat-icon>
+        </div>
+        <div class="uname">{{ userName }}</div>
+      </div>
+      <div (click)="gotourl('logout')" [class.selected]="url === '/logout'">Logout</div>
+    </div>
+  </div>
